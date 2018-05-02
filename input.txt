@@ -1,0 +1,12 @@
+Grid size (format: n) --> The grid will be an nxn square grid for even n, or an (n-1)x(n-1) square grid for odd n. Max(n)=49.
+Input: 10
+Dipole Position (format: x,y,z) --> The dipole will be placed at coordinate x,y,z. Consider the chosen grid limits when choosing the dipole position.
+Input: 0.0,0.0,0.0
+Dipole Orientation (format: px,py,pz) --> The dipole will be oriented as if from origin towards (px,py,pz). Dipole's intensity will be the euclidean distance from the origin to (px,py,pz).
+Input: 1.0,1.0,1.0
+
+ - The dipole's electric field will be visible through its effect on the detectors distributed along the 3D space. 
+ - The electric field intensity at the detectors is color coded to go from a small intensity corresponding to a shade of yellow, passing through green, blue, purple, pink shades, until reaching a high intensity corresponding to a shade of red.
+ - The intensities at each detector have been normalized. The intensity at the dipole has not been normalized, for a better view.
+ - The dipole will be visible as the color flickering vector.
+ - The sphere-like dipole positions were generated using a simple loop script dividing 360 degrees by the number of positions desired for each crown. There are a total of 90 detectors in the application.
